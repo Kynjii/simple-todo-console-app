@@ -25,16 +25,16 @@ if (userChoice != null)
     switch (userChoice.ToUpper())
     {
         case "A":
-            op = " + ";
+            op = "+";
             result = firstNumber + secondNumber;
             break;
         case "S":
-            op = " - ";
+            op = "-";
             result = firstNumber - secondNumber;
             break;
         case "M":
-            op = " - ";
-            result = firstNumber - secondNumber;
+            op = "*";
+            result = firstNumber * secondNumber;
             break;
     }
 
@@ -44,7 +44,8 @@ if (userChoice != null)
     }
     else
     {
-        Console.WriteLine(firstNumber + op + secondNumber + " = " + result);
+        Console.WriteLine(
+            $"{firstNumber} {op} {secondNumber} = {result}");
     }
 }
 
